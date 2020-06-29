@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @CrossOrigin
-    @GetMapping("profile")
+    @GetMapping("/profile")
     public UserProfile profile(){
         User user = (User) SecurityContextHolder.getContext()
                 .getAuthentication()
